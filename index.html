@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODOリスト</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>TODOリスト</h1>
+    </header>
+    <main>
+            <div class="todoContainer">
+                <form id="todoForm">
+                    <label for="todoInput">タスク</label>
+                    <input type="text" placeholder="やることを入力" id="todoInput">
+                    <button type="submit" class="addBtn" id="addBtn">追加</button>
+                    <button type="button" id="removeModeBtn">削除モード</button>
+                </form>
+                <ul id="todoList"></ul>
+            </div>
+    </main>
+    <script src="todolist.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+html{
+    scroll-behavior: smooth;
+
+ }
+ 
+ body{
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+ }
+
+ img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+ }
+
+header{
+    background-color: black;
+    padding: 1rem;
+}
+
+header h1{
+    color:white;
+    margin: 0;
+}
+
+.todoContainer {
+    text-align: center;
+    margin:0 2rem; 
+}
+
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 12px;
+}
+
+
+li{
+    list-style: none;
+    display:flex;
+    gap: 8px;
+    /* margin: 0 auto; */
+}
+
+button{
+    border-radius: 10%;
+    border:0;
+    padding: 4px 14px;
+    transition: 0.15s;
+    height: 32px;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+button:active {
+    transform: translateY(0px);
+    /* box-shadow: 0px 2px 4px rgba(0,0,0,0.15); */
+}
+
+
+.removeBtn{
+    background-color: #e74c3c;
+    color: #fff;
+    transition: 0.15s;
+}
+
+.removeBtn:hover{
+    background-color: #c0392b;
+    /* border: 0; */
+    /* box-shadow:0 4px 12px rgba(0, 0, 0, 0.30); */
+    /* box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2); */
+}
+
+.removeBtn:active {
+    background-color: #a93226;
+    /* transform: translateY(1px); */
+}
+
+.editBtn{
+background-color: #3498db;
+color: #fff;
+transition: 0.15s;
+}
+.editBtn:hover {
+    background-color: #2e86c1;
+}
+
+.editBtn:active {
+    background-color: #1f618d;
+    /* transform: translateY(1px); */
+}
+
+.removeMode{
+    background-color: #f39c12;
+}
+
+.removeMode:hover {
+    background-color: #d68910;
+}
+
+.removeMode:active{
+    background-color: #b9770e;
+}
+
+#removeModeBtn{
+    min-width: 100px;
+}
+
+.taskContent{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    max-width: 265px;
+}
+
+.taskText{
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width:0;
+    width: 100%;
+}
+
+.actionArea {
+    display: flex;
+    gap: 6px;
+    flex-shrink: 0;
+    margin-left: 10px;
+    align-items: center
+}
+
+#todoList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#todoList li{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 10px 12px;
+    margin: 8px 0;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    /* animation: addIn 0.2s ease; */
+}
+
+.checkboxLabel{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    height: 32px;
+    /* line-height: 1; */
+  }
+
+.checkboxLabel input[type="checkbox"]{
+    width: 24px;
+    height: 24px;
+    accent-color:#f39c12;
+    cursor: pointer;
+}
+
+#removeSelectedBtn{
+    margin-bottom: 5%;
+}
+
+@media screen  and (max-width:768px) {
+    /* ul{
+        flex-direction: column;
+    } */
+    li{
+        text-align: center;
+    }
+    
+}
+
+/* @keyframes addIn {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
