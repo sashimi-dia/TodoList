@@ -99,7 +99,6 @@ const startEdit = (id) => {
 
 //編集終了関数
 const finishEdit = (id,newText)=>{
-    // if(!newText)removeTask(id);
     if(!newText.trim()){
         removeTask(id);
         return;
